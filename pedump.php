@@ -12,7 +12,7 @@
 function run_pefile($pe_file_path)
 {
 	$out_file = $pe_file_path . ".txt";
-	echo exec("python.exe pedump.py " . $pe_file_path . " " . $out_file);
+	echo exec("python pedump.py " . $pe_file_path . " " . $out_file);
 	echo "<pre>";
 	echo file_get_contents($out_file);
 	echo "</pre>";
